@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "oi"
-
 current_brightness=$(cat /sys/class/backlight/intel_backlight/brightness)
 max_brightness=$(cat /sys/class/backlight/intel_backlight/max_brightness)
 step_size=$((max_brightness / 20))       # Set the step size to 5% (adjust as needed)
