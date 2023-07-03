@@ -1,0 +1,16 @@
+[module/cbacklight]
+type = custom/script
+exec = ~/.config/polybar/scripts/backlight.sh
+scroll-up = ~/.config/polybar/scripts/backlight.sh --scroll-down
+scroll-down = ~/.config/polybar/scripts/backlight.sh --scroll-down
+interval = 1
+
+format = <ramp> <label>
+label = %percentage%%
+
+; Only applies if <ramp> is used
+ramp-4 = 🌞
+ramp-3 = 🌝
+ramp-2 = 🌜
+ramp-1 = 🌚
+ramp-0 = 🌑
